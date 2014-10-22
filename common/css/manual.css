@@ -6,11 +6,12 @@
 		.manual-menu>ul>ol>ol>ol {display: none; overflow: hidden; padding-left:8px;}
 		.manual-menu ul li { overflow: hidden; padding:0; padding-left:17px; line-height: 20px; background: url(../images/doc.png) no-repeat 0 0px;}
 		.manual-menu li { background-image: none}
-		.manual-menu ul .add {background: url(../images/add.png) no-repeat 0 6px; background-size: 12px 12px;}
+		.manual-menu ul .add { padding-left:12px; line-height: 26px; background: url(../images/add.png) no-repeat 0 6px; background-size: 12px 12px; cursor: pointer;}
+			.manual-menu ul .add:hover,.manual-menu a:hover { color:#8cc457;}
 		.manual-menu ul .del {background: url(../images/del.png) no-repeat 0 5px; background-size: 12px 12px;}
 		
-		.file { display: inline-block; width: 16px; height: 16px; background: url(../images/file.png) no-repeat 0 0px; vertical-align: middle;}
-.manual-article { overflow: hidden; padding-left:130px; width: auto; height: auto;}
+		.file { display: inline-block; margin:0 3px; width: 16px; height: 16px; background: url(../images/file.png) no-repeat 0 -2px; vertical-align: middle;}
+.manual-article { overflow: hidden; padding-left:50px; width: auto; height: auto;}
 
 .menu_left ,.menu_right{ position: fixed; _position: absolute; left:0; top:50%; margin-top: -32px; width: 19px; height:64px; background: url(../images/menu_left.png) no-repeat 0 0; cursor: pointer;}
 	.menu_left:hover { background-image: url(../images/menu_left_hover.png);}

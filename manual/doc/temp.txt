@@ -1,0 +1,4 @@
+<div class="pbox">
+		<h4>编辑楼层信息</h4>
+		<img src="manual/images/2.2.3.1.jpg"/>
+</div>
