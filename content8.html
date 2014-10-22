@@ -1,0 +1,51 @@
+<div class="pbox">
+	<h4>软件使用中常见的问题</h4>
+	<ul class="faqs">
+		<li id="add-house">如何添加房屋</li>
+		<li id="add-sdb">水电表以及固定费用的添加</li>
+		<li id="add-zy">家居资源配置</li>
+		<li id="csdb">如何抄水电表</li>
+		<li id="czfw">如何出租房屋</li>
+	</ul>
+	<div class="tw"></div>
+	<h4>关于我们的服务</h4>
+	<ul class="faqs">
+		<li id="free">房讯房屋管理软件有是免费的吗？</li>
+		<li id="wfree">房讯房屋管理软件为什么要免费？</li>
+		<li id="server">什么是房讯服务？</li>
+		<li id="anymous">游客与注册用户有什么区别吗？</li>
+		<li id="morefunction">如果我需要使用更多好用的功能要怎么做？</li>
+		<li id="admins">我的房子很多需要几个人同时管理要怎么做？</li>
+		<li id="data">房讯的数据安全吗？</li>
+		<li id="getvip">如何免费获取付费版功能</li>
+	</ul>
+	<div class="tw"></div>
+	<div id="faqs_view" class="pbox absolute" title="点击页面关闭">
+		
+	</div>
+	<script>
+$(function(){
+	 $(".faqs li").click(function(){
+	 	var id=$(this).attr('id');
+	 	var viewWidth=$(window).width()-200;
+	 	$("#faqs_view").html("<div class='loading1'></div>");
+		$.ajax({
+			url:'faqs/faqs_'+id+'.html',
+			success:function(response,xhr){
+                $("#faqs_view").html(response);
+            }
+		});
+		$("#faqs_view").css('width',viewWidth);
+		$("#faqs_view").fadeIn(200);
+	 });
+	 $(".faqs li").click(function(){
+	 	$(this).addClass('active').siblings(this).removeClass('active');
+	 });
+ });
+	$(function(){
+		$("#faqs_view").click(function(){
+			$(this).fadeOut();
+		})
+	})
+</script>
+</div>

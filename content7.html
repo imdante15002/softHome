@@ -1,0 +1,61 @@
+<div class="pbox">
+	<h4>请选择您想要下载的版本</h4>
+</div>
+<div class="pbox">
+	<ul class="btn-bottom">
+			<li><a href="#" class="btn btn-default" >出租房管理系统网络旗舰版</a></li>
+			<li><a href="#" class="btn btn-default" >二房东管理系统网络旗舰版</a></li>
+			<li><a href="#" class="btn btn-default" >写字楼管理系统网络旗舰版</a></li>
+			<li><a href="#" class="btn btn-default">铺位管理系统网络旗舰版</a></li>
+	</ul>
+	<!-- http://www.51-zf.com/software/RentHousenet/BerthNet/BerthNet.exe -->
+</div>
+<div class="pbox"><h4>扫描二维码下载大房东APP</h4></div>
+<div class="pbox hm">
+	<img src="common/images/qrcode.png" alt="" class="hm">
+</div>
+<script>
+	$(document).ready(function(){
+		$(".btn-bottom li").click(function(){
+			var lid=$(this).index();
+			var url_0='http://pan.baidu.com/s/1i3sZWxf';
+			var url_1='http://pan.baidu.com/s/1i3sZWxf';
+			var url_2='http://pan.baidu.com/s/1i3sZWxf';
+			var url_3='http://pan.baidu.com/s/1i3sZWxf';
+			var popWidth=$(window).width()-200;
+			var popHeight=$(window).height()-80;
+			var leftWidth='-'+Math.floor(popWidth/2);
+			var leftHeight='-'+Math.floor(popHeight/2);
+			var frameWidth=popWidth;
+			var frameHeight=popHeight-36;
+			$(".pop").css("width",+popWidth);
+			$(".pop").css("height",+popHeight);
+			$(".pop").css("margin-left",+leftWidth);
+			$(".pop").css("margin-top",+leftHeight);
+			$(".pop").css("top","50%");
+			$(".pop").css("padding","5px");
+			$(".pop").css("background-color","#FFF");
+			$(".pop").fadeIn(300);
+			if (lid==0) {
+				$("#bdownload").attr('src',url_0);
+			} else if(lid==1){
+				$("#bdownload").attr('src',url_1);
+			}else if(lid==2){
+				$("#bdownload").attr('src',url_2);
+			}else if(lid==3){
+				$("#bdownload").attr('src',url_3);
+			}
+			$("#bdownload").css("width",+frameWidth);
+			$("#bdownload").css("height",+frameHeight);
+			$("#bdownload").css("border","1px solid #ddd");
+			
+		});
+$(".db_d_close").click(function(){
+	$(".pop").fadeOut(300);
+})
+	})
+</script>
+<div class="pop">
+<div class="pbox"><div class="y db_d_close" style="cursor:pointer;" title="点击关闭窗口">关闭</div>下载页面</div>
+	<iframe src="" frameborder="0" id="bdownload"></iframe>
+</div>

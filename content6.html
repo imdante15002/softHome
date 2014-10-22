@@ -1,0 +1,13 @@
+<iframe src="http://shop100595355.taobao.com" frameborder="0" width="100%" id="iframe1"></iframe>
+<script>
+	function resize_window(){
+	//获取当前窗口大小，重置#layout和#aside-menu 的width和height
+	  $("#iframe1").height($(window).height()-0).width($(window).width()-170);
+	}
+	$(function(){
+	  resize_window();
+	  $(window).resize(function(){
+	    resize_window();
+	  })
+	});
+</script>

@@ -1,0 +1,16 @@
+.manual-menu{ position: absolute; top:0; left: 0; padding:10px; width: 190px; height:100%; border-right:1px solid #eee; overflow:hidden; overflow-y: auto; }
+	.manual-menu h3 { line-height: 26px; font-size:15px; padding-left:24px; margin-bottom: 5px; overflow: hidden; width: auto; background:#fff url(../images/project.png) no-repeat 5px 4px; border:1px solid #aaa; border-radius: 3px; font-weight: normal; cursor: pointer;}
+	.manual-menu>ul{ display: none; overflow: hidden; padding-left:8px; font-size: 14px; line-height: 26px;margin-bottom: 10px; background: url(../images/treebm.png) no-repeat left bottom;}
+		.manual-menu>ul>ol { overflow: hidden; display: none; padding-left:8px;  background: url(../images/treetop.png) repeat-y -0px -8px; line-height: 20px; font-size:12px;}
+		.manual-menu>ul>ol>ol { display: none; overflow: hidden; padding-left:8px;background: url(../images/tree.png) repeat-y -0px -8px;}
+		.manual-menu>ul>ol>ol>ol {display: none; overflow: hidden; padding-left:8px;}
+		.manual-menu ul li { overflow: hidden; padding:0; padding-left:17px; line-height: 20px; background: url(../images/doc.png) no-repeat 0 0px;}
+		.manual-menu li { background-image: none}
+		.manual-menu ul .add {background: url(../images/add.png) no-repeat 0 6px; background-size: 12px 12px;}
+		.manual-menu ul .del {background: url(../images/del.png) no-repeat 0 5px; background-size: 12px 12px;}
+		
+		.file { display: inline-block; width: 16px; height: 16px; background: url(../images/file.png) no-repeat 0 0px; vertical-align: middle;}
+.manual-article { overflow: hidden; padding-left:130px; width: auto; height: auto;}
+
+.menu_left ,.menu_right{ position: fixed; _position: absolute; left:0; top:50%; margin-top: -32px; width: 19px; height:64px; background: url(../images/menu_left.png) no-repeat 0 0; cursor: pointer;}
+	.menu_left:hover { background-image: url(../images/menu_left_hover.png);}

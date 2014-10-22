@@ -1,0 +1,35 @@
+<div class="box relative">
+  <img src="common/images/index.jpg" alt="">
+  <a id="qrcode" class="absolute click0" title="点击所描二维码，时刻掌握最新租房信息"></a>
+  <a href="http://www.51-zf.com" class="absolute click1" ></a>
+  <a id="app" class="absolute click2" title="点击扫描下载大房东app"></a>
+  <a id="down" class="absolute click3"></a>
+  <div class="qrcode pop">
+  	<img src="common/images/weixin.png" alt=""  width="120">
+  	<p>扫描关注我们的微信，住房信息一手掌握</p>
+  </div>
+  <div class="app pop">
+  	<img src="common/images/qrcode.png" alt="" width="120">
+  	<p>扫描二维码，租房管理从此随时随地</p>
+  </div>
+</div>
+<script>
+	$(function(){
+		$("#qrcode").click(function(){
+			$(".qrcode").fadeIn(200).delay(8000).fadeOut(200);
+			$(".app").hide();
+		});
+		$("#app").click(function(){
+			$(".app").fadeIn(200).delay(8000).fadeOut(200);
+			$(".qrcode").hide();
+		});
+		$("#down").click(function(){
+			$.ajax({
+				url:'content7.html',
+				success:function(response,xhr){
+                $("#myTab_Content0").html(response);
+            }
+			})
+		})
+	})
+</script>

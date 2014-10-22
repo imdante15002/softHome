@@ -1,0 +1,332 @@
+body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,form,fieldset,legend,button,input,textarea,th,td {
+	margin: 0;
+	padding: 0
+}
+
+html {
+	color: #2b2b2b;
+	overflow-y: scroll;
+	overflow: -moz-scrollbars-vertical
+}
+
+body,button,input,select,textarea {
+	font-size: 12px;
+	font-family: arial,'Hiragino Sans GB','Microsoft Yahei','Microsoft YaHei','宋体',\5b8b\4f53,Tahoma,Arial,Helvetica,STHeiti
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-size: 100%
+}
+
+em {
+	font-style: normal
+}
+
+small {
+	font-size: 12px
+}
+
+ul,ol {
+	list-style: none
+}
+
+a {
+	text-decoration: none;
+	outline: none;
+	color: #2b2b2b;
+}
+
+a:hover {
+	text-decoration: none
+}/*去除a连接下划线*/legend {
+	color: #000
+}
+
+fieldset,img {
+	border: 0
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0
+}
+
+img {
+	-ms-interpolation-mode: bicubic
+}
+/*表单样式*/
+textarea {
+	resize: vertical
+}
+
+button,input,select,textarea {
+	font-size: 100%;
+	outline: none;
+	vertical-align: middle;
+}
+/*左右浮动并且定义为内容模块*/
+.z {
+	float: left !important;
+	display: inline;
+}
+
+.y {
+	float: right !important;
+	display: inline;
+}/*设置zoom：1*/.cl:before,.cl:after {
+	content: "";
+	display: table;
+}
+
+.cl:after {
+	clear: both;
+}
+
+.cl {
+	*zoom: 1;
+}/*div间距设置5/10/15/20*/
+.f,.t,.tw,.tf {
+	clear: both;
+	overflow: hidden;
+	width: auto;
+}
+
+.f {
+	height: 5px;
+	line-height: 5px;
+}
+
+.t {
+	height: 10px;
+	line-height: 10px;
+}
+
+.tf {
+	height: 15px;
+	line-height: 15px;
+}
+
+.tw {
+	height: 20px;
+	line-height: 20px;
+}
+/*边框样式*/
+.bmw {
+	border: #eee solid 1px;
+}
+
+.bmd {
+	border-bottom: 1px solid #eee;
+}
+
+.vm {
+	vertical-align: middle;
+}
+
+.vm * {
+	vertical-align: middle;
+}
+
+.hm {
+	text-align: center;
+}/*字体大小*/
+.xs0 {
+	font-size: 10px;
+}
+
+.xs2 {
+	font-size: 12px;
+}
+
+.xs4 {
+	font-size: 14px;
+}
+
+.xs5 {
+	font-size: 15px;
+}
+
+.xs6 {
+	font-size: 16px;
+}
+
+.xs8 {
+	font-size: 18px;
+}
+
+.xs10 {
+	font-size: 24px;
+}
+
+.weight {
+	font-weight: 700
+}
+/*字体颜色*/
+.si0{
+	color:#333;
+}
+.xi1 {
+	color: #555;
+}
+
+.xi2 {
+	color: #666;
+}
+
+.xi3 {
+	color: #777;
+}
+
+.xi4 {
+	color: #888;
+}
+
+.xi5 {
+	color: #999;
+}
+
+.xi6 {
+	color: #ccc;
+}
+
+.red {
+	color: red;
+}/*微软雅黑字体*/
+.ffmy {
+	font-family: "Microsoft YaHei";
+}/*背景颜色*/
+.bff {
+	background-color: #fff;
+}
+.bf8 {
+	 background-color: #f8f8f8
+}
+.bfc { 
+	background-color: #ccc
+}
+.bfe {
+	background-color: #e5e5e5
+}
+/*div定位position*/
+.relative,.pr {
+	position: relative;
+}
+
+.absolute,.pa {
+	position: absolute;
+}
+
+.fixed,.pf {
+	position: fixed;
+	_position: absolute;
+}
+
+.static,.ps {
+	position: static;
+}
+/*span标签间隔*/
+.pi {
+	margin: 0 5px;
+	color: #eee;
+	font-size: 10px;
+}
+
+.ov {
+	overflow: hidden;
+}
+
+.fx {
+	padding-left: 15px;
+	font-size: 12px;
+	color: #666;
+}
+
+/*边距设置*/
+.mlm {
+	margin-left: 10px;
+}
+
+.mrm {
+	margin-right: 10px;
+}
+
+.mmm {
+	margin: 0 10px;
+}
+
+.mbm {
+	margin-bottom: 10px;
+}
+
+.mwm {
+	margin-bottom: 20px;
+}/*页面通用div定义布局*/
+
+#wp {
+	width: auto;
+	height: auto;
+	overflow: hidden;
+}
+
+.wp {
+	margin: 0 auto;
+	width: 1000px;
+}
+
+.box {
+	overflow: hidden;
+	width: auto;
+	height: auto;
+}
+
+.pbox {
+	overflow: hidden;
+	padding: 10px;
+	width: auto;
+	height: auto;
+}
+
+.mbox {
+	overflow: hidden;
+	margin: 10px;
+	width: auto;
+	height: auto;
+}
+
+.caret {
+	display: inline-block;
+	width: 0;
+	height: 0;
+	margin-left: 2px;
+	vertical-align: middle;
+	border-top: 4px solid;
+	border-right: 4px solid transparent;
+	border-left: 4px solid transparent;
+}
+
+:hover {
+	-webkit-transition-duration: 0.5s;
+	-moz-transition-duration: 0.5s;
+	-ms-transition-duration: 0.5s;
+	-o-transition-duration: 0.5s;
+	transition-duration: 0.5s;
+}
+
+.dot {
+	display: inline-block;
+	width: 0;
+	height: 0;
+	margin-right: 4px;
+	vertical-align: middle;
+	border: 2px solid #ccc;
+	border-radius: 5px;
+}
+.normal {
+	font-weight: normal;
+}
+.block {
+	 display: block;
+	}
+.inline-block{
+	display: inline-block;
+}
