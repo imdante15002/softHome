@@ -28,75 +28,51 @@
     <div id="content-wrapper">
       <div class="inner clearfix">
         <section id="main-content">
-          <pre><code>&lt;div id="layout" class="nTab cl"&gt;
-    &lt;div id="aside-menu" class="cl"&gt;
-        &lt;ul id="myTab" class="relative "&gt;
-            &lt;li id="block0" class="active" onclick="nTabs(this,0);"&gt;软件首页&lt;/li&gt;
-            &lt;li id="block1" class="normal" onclick="nTabs(this,1);"&gt;软件特色&lt;/li&gt;
-            &lt;li id="block2" class="normal" onclick="nTabs(this,2);"&gt;付费及免费方式&lt;/li&gt;
-            &lt;li id="block3" class="normal" onclick="nTabs(this,3);"&gt;使用手册&lt;/li&gt;
-            &lt;li id="block4" class="normal" onclick="nTabs(this,4);"&gt;房屋管理经验交流&lt;/li&gt;
-            &lt;li id="block5" class="normal" onclick="nTabs(this,5);"&gt;智能管理新趋势&lt;/li&gt;
-            &lt;li id="block6" class="normal" onclick="nTabs(this,6);"&gt;常见家居用品购买&lt;/li&gt;
-            &lt;li id="block7" class="normal" onclick="nTabs(this,7);"&gt;下载其他版本&lt;/li&gt;
-            &lt;li id="block8" class="normal" onclick="nTabs(this,8);"&gt;常见问题&lt;/li&gt;
-        &lt;/ul&gt;
-    &lt;/div&gt;
-    &lt;div id="main" class="TabContent cl"&gt;
-        &lt;div id="myTab_Content0" class="active"&gt;&lt;div class='loading'&gt;&lt;/div&gt;&lt;/div&gt;
-        &lt;div id="myTab_Content1" class="none"&gt;&lt;/div&gt;
-        &lt;div id="myTab_Content2" class="none"&gt;&lt;/div&gt;
-        &lt;div id="myTab_Content3" class="none"&gt;&lt;/div&gt;
-        &lt;div id="myTab_Content4" class="none"&gt;&lt;/div&gt;
-        &lt;div id="myTab_Content5" class="none"&gt;&lt;/div&gt;
-        &lt;div id="myTab_Content6" class="none"&gt;&lt;/div&gt;
-        &lt;div id="myTab_Content7" class="none"&gt;&lt;/div&gt;
-        &lt;div id="myTab_Content8" class="none"&gt;&lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-&lt;script src="common/js/jquery-1.11.1.min.js"&gt;&lt;/script&gt;
-&lt;script src="common/js/Ntab.js"&gt;&lt;/script&gt;
-&lt;script&gt;
-    $.ajaxSetup ({ 
-    cache: false
-    }); 
-&lt;/script&gt;
-&lt;script&gt;
-//各个按钮ajax显示内容
-$("#myTab_Content0").load('content0.html');
-$("#myTab li").click(function(){
-    var id=$(this).index();
-    $("#myTab_Content"+id).html("&lt;div class='loading'&gt;&lt;/div&gt;");
-    if (id==3) {
-        $.ajax({
-            url:'manual/index.html',
-            success:function(response,xhr){
-                $("#myTab_Content3").html(response);
-            }
-        })
-    }else{
-        $.ajax({
-            url:'content'+id+'.html',
-            success:function(response,xhr){
-                $("#myTab_Content"+id).html(response);
-            }
-        })
-    }
-});
- $(window).scroll(function(){
-    var a = 50;
-    if ($(window).scrollTop()&gt;a) {
-        $("#aside-menu").addClass('fixed');
-    }else{
-        $("#aside-menu").removeClass('fixed');
-    }
+          <p>&lt;!DOCTYPE html&gt;
 
-});
-</code></pre>
-
-<p></p>
+</p>
+    
+    
+    软件首页
+    
+    
 
 
+    <div>
+        <div>
+            <ul>
+                <li>软件首页</li>
+                <li>软件特色</li>
+                <li>付费及免费方式</li>
+                <li>使用手册</li>
+                <li>房屋管理经验交流</li>
+                <li>智能管理新趋势</li>
+                <li>常见家居用品购买</li>
+                <li>下载其他版本</li>
+                <li>常见问题</li>
+            </ul>
+        </div>
+        <div>
+            <div><div></div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    
+    
+    
+    
+
+
+
+<p>
+</p>
         </section>
 
         <aside id="sidebar">
